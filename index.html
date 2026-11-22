@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document Download</title>
+</head>
+<body>
+<script>
+    const downloadLink = document.createElement("a");
+
+    downloadLink.href = "./document.pdf";
+    downloadLink.download = "Document.pdf";
+
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    downloadLink.remove();
+</script>
+</body>
+</html>
